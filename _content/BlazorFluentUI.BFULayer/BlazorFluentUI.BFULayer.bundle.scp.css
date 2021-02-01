@@ -1,0 +1,16 @@
+@import '';
+
+/* _content/BlazorFluentUI.BFULayer/BFULayerHost.razor.rz.scp.css */
+[b-9lt5ygkw0y] .ms-Layer--fixed {
+    position: fixed;
+    z-index: var(--zIndex-Layer);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+}
+
+[b-9lt5ygkw0y] .ms-Layer-content {
+    visibility: visible;
+}

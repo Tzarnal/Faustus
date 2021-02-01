@@ -1,0 +1,21 @@
+@import '';
+
+/* _content/BlazorFluentUI.BFUOverflowSet/BFUOverflowSet.razor.rz.scp.css */
+[b-6g082d1u1i] .ms-OverflowSet {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+}
+[b-6g082d1u1i] .ms-OverflowSet--vertical {
+    flex-direction: column;
+}
+
+[b-6g082d1u1i] .ms-OverflowSet-item {
+    flex-shrink: 0;
+    display: inherit;
+}
+
+[b-6g082d1u1i] .ms-OverflowSet-overflowButton {
+    flex-shrink: 0;
+    display: inherit;
+}

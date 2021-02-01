@@ -1,0 +1,131 @@
+@import '';
+
+/* _content/BlazorFluentUI.BFUDocumentCard/BFUDocumentCard.razor.rz.scp.css */
+.ms-DocumentCard[b-2dn3k3kx2j] {
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--palette-White);
+    border: 1px solid var(--palette-NeutralLight);
+    max-width: 320px;
+    min-width: 240px;
+    user-select: none;
+    position: relative;
+}
+
+.ms-DocumentCard--actionable:hover[b-2dn3k3kx2j] {
+    cursor: pointer;
+    border-color: var(--palette-NeutralTertiaryAlt);
+}
+
+    .ms-DocumentCard--actionable:hover[b-2dn3k3kx2j]:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 1px solid var(--palette-NeutralTertiaryAlt);
+        pointer-events: none
+    }
+
+.ms-DocumentCard--compact[b-2dn3k3kx2j] {
+    display: flex;
+    max-width: 480px;
+    height: 108px;
+}
+
+    .ms-DocumentCard--compact[b-2dn3k3kx2j]  .ms-DocumentCardPreview {
+        border-right: 1px solid var(--palette-NeutralLight);
+        border-bottom: 0;
+        max-height: 106px;
+        max-width: 144px;
+    }
+
+
+    .ms-DocumentCard--compact[b-2dn3k3kx2j]  .ms-DocumentCardPreview-icon {
+        max-height: 32px;
+        max-width: 32px;
+    }
+
+    .ms-DocumentCard--compact[b-2dn3k3kx2j]  .ms-DocumentCardActivity {
+        padding-bottom: 12px
+    }
+
+    .ms-DocumentCard--compact[b-2dn3k3kx2j]  .ms-DocumentCardTitle {
+        padding-bottom: 12px 16px 8px 16px;
+        font-size: var(--fontSize-Medium);
+        line-height: 16px;
+    }
+/* _content/BlazorFluentUI.BFUDocumentCard/BFUDocumentCardActivity.razor.rz.scp.css */
+.ms-DocumentCardActivity[b-6trx6inqpp] {
+    padding: 8px 16px;
+    position: relative;
+}
+
+
+.ms-DocumentCardActivity-avatars[b-6trx6inqpp] {
+    margin-left: -2px;
+    height: 32px;
+}
+
+.ms-DocumentCardActivity-avatar[b-6trx6inqpp] {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+}
+
+    .ms-DocumentCardActivity-avatar[b-6trx6inqpp]::after {
+        content: '';
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        right: -1px;
+        bottom: -1px;
+        border: 2px solid var(--palette-White);
+        border-radius: 50%;
+    }
+    .ms-DocumentCardActivity-avatar:nth-of-type(2)[b-6trx6inqpp] {
+        margin-left: -16px;
+    }
+
+.ms-DocumentCardActivity-name[b-6trx6inqpp] {
+    display: block;
+    font-size: var(--fontSize-Small);
+    line-height: 15px;
+    height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--palette-NeutralPrimary);
+    font-weight: var(--fontWeight-SemiBold);
+}
+
+.ms-DocumentCardActivity-activity[b-6trx6inqpp] {
+    display: block;
+    font-size: var(--fontSize-Small);
+    line-height: 15px;
+    height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--palette-NeutralSecondary);
+}
+/* _content/BlazorFluentUI.BFUDocumentCard/BFUDocumentCardTitle.razor.rz.scp.css */
+.ms-DocumentCardTitle[b-lbc9iap999] {
+    font-size: var(--fontSize-Large);
+    padding: 8px 16px;
+    overflow: hidden;
+    word-wrap: break-word;
+    height: 38px;
+    line-height: 21px;
+    color: var(--palette-NeutralPrimary);
+}
+
+.ms-DocumentCardTitle-secondaryTitle[b-lbc9iap999] {
+    font-size: var(--fontSize-Medium);
+    height: 45px;
+    line-height: 18px;
+    color: var(--palette-NeutralSecondary);
+}

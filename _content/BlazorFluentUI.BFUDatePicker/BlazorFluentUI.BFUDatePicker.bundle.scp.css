@@ -1,0 +1,50 @@
+@import '';
+
+/* _content/BlazorFluentUI.BFUDatePicker/BFUDatePicker.razor.rz.scp.css */
+.ms-DatePicker[b-iqq5c0iw5s] {
+    box-shadow: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+[b-iqq5c0iw5s] .ms-DatePicker-textField {
+    position: relative;
+}
+
+    [b-iqq5c0iw5s] .ms-DatePicker-textField input:read-only {
+        cursor: pointer;
+    }
+
+
+    [b-iqq5c0iw5s] .ms-DatePicker-textField input::-ms-clear {
+        display: none;
+    }
+
+.ms-DatePicker--disabled .ms-DatePicker-textField input:read-only[b-iqq5c0iw5s] {
+    cursor: default;
+}
+
+[b-iqq5c0iw5s] .ms-DatePicker-callout {
+    box-shadow: var(--effects-Elevation8);
+}
+
+.ms-DatePicker[b-iqq5c0iw5s]  .ms-TextField-icon {
+    color: var(--palette-NeutralSecondary);
+    font-size: var(--fontSize-MediumPlus);
+    line-height: 18px;
+    pointer-events: none;
+    position: absolute;
+    padding-top: 7px;
+}
+
+.ms-DatePicker:not(.ms-DatePicker--is-disabled)[b-iqq5c0iw5s]  .ms-Icon {
+    pointer-events: initial;
+    cursor: pointer;
+}
+
+.ms-DatePicker.ms-DatePicker--is-disabled[b-iqq5c0iw5s]  .ms-Icon {
+    color: var(--semanticTextColors-DisabledText);
+    cursor: default;
+}

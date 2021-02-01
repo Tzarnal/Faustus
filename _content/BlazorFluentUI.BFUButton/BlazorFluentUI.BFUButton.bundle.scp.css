@@ -1,0 +1,762 @@
+@import '';
+
+/* _content/BlazorFluentUI.BFUButton/BFUButtonBase.razor.rz.scp.css */
+.ms-Button[b-n2qqg9bfh6] {
+    outline: transparent;
+    position: relative;
+    font-size: var(--fontSize-Medium);
+    font-weight: var(--fontWeight-Regular);
+    box-sizing: border-box;
+    border: 1px solid var(--semanticColors-ButtonBorder);
+    user-select: none;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: top;
+    padding: 0 16px;
+    min-width: 80px;
+    height: 32px;
+    border-radius: var(--effects-RoundedCorner2);
+}
+
+     .ms-Button[b-n2qqg9bfh6]::-moz-focus-inner{
+        border:0;
+    }
+
+.ms-Fabric--isFocusVisible .ms-Button:focus[b-n2qqg9bfh6]::after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    bottom: 2px;
+    right: 2px;
+    border: 1px solid var(--palette-White);
+    outline: 1px solid var(--palette-NeutralSecondary);
+    z-index: var(--zIndex-FocusStyle);
+}
+
+    @media screen and (-ms-high-contrast: active){
+        .ms-Fabric--isFocusVisible .ms-Button:focus[b-n2qqg9bfh6]::after {
+            left: -2px;
+            top: -2px;
+            bottom: -2px;
+            right: -2px;
+            border: none;
+            outline-color: ButtonText;
+        }
+    }
+
+
+     .ms-Button:active > *[b-n2qqg9bfh6] {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+.ms-Button.is-disabled[b-n2qqg9bfh6] {
+    background-color: var(--semanticColors-DisabledBackground);
+    color: var(--semanticTextColors-DisabledText);
+    cursor: default;
+    pointer-events: none;
+}
+
+ .ms-Button:hover[b-n2qqg9bfh6], 
+ .ms-Button:focus[b-n2qqg9bfh6] {
+    text-decoration: none;
+    outline: 0;
+}
+
+ .ms-Button:link[b-n2qqg9bfh6], 
+ .ms-Button:visited[b-n2qqg9bfh6], 
+ .ms-Button:active[b-n2qqg9bfh6] {
+    text-decoration: none;
+}
+
+@media screen and (-ms-high-contrast: active) {
+     .ms-Button[b-n2qqg9bfh6] {
+        color: GrayText;
+        border-color: GrayText;
+    }
+}
+
+ .ms-Button.ms-Button--default:not(.ms-Button--command).is-expanded[b-n2qqg9bfh6] {
+    background-color: var(--palette-NeutralLight);
+    color: var(--palette-NeutralDark);
+}
+ .ms-Button.ms-Button--primary.is-expanded[b-n2qqg9bfh6] {
+    background-color: var(--palette-ThemeDark);
+    color: var(--palette-White);
+}
+
+ .ms-Button.ms-Button--default:not(.ms-Button--command).is-expanded[b-n2qqg9bfh6]  .ms-Button-icon {
+    color: var(--palette-ThemeDark);
+}
+
+.ms-Button.ms-Button--primary.is-expanded[b-n2qqg9bfh6]  .ms-Button-icon {
+    color: var(--palette-White);
+}
+
+.ms-Button.ms-Button--default:not(.ms-Button--command).is-expanded[b-n2qqg9bfh6]  .ms-Button-menuIcon {
+    color: var(--palette-NeutralPrimary);
+}
+
+.ms-Button.ms-Button--primary.is-expanded[b-n2qqg9bfh6]  .ms-Button-menuIcon {
+    color: var(--palette-White);
+}
+
+ .ms-Button.ms-Button--default:not(.ms-Button--command).is-expanded:hover[b-n2qqg9bfh6] {
+    background-color: var(--palette-NeutralQuaternaryAlt);
+}
+ .ms-Button.ms-Button--primary.is-expanded:hover[b-n2qqg9bfh6] {
+    background-color: var(--palette-ThemeDark);
+}
+
+.ms-Button.is-disabled[b-n2qqg9bfh6]  .ms-Button-icon {
+    color: var(--semanticTextColors-DisabledText);
+}
+
+.ms-Button.is-disabled[b-n2qqg9bfh6]  .ms-Button-menuIcon {
+    color: var(--semanticTextColors-DisabledText);
+}
+
+[b-n2qqg9bfh6] .ms-Button-flexContainer {
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+[b-n2qqg9bfh6] .ms-Button-textContainer {
+    display: block;
+    flex-grow: 1;
+}
+
+[b-n2qqg9bfh6] .ms-Button-description {
+    display: block;
+    font-size: var(--fontSize-Small);
+    font-weight: var(--fontWeight-Regular);
+}
+
+
+[b-n2qqg9bfh6] .ms-Button-icon {
+    font-size: var(--fontSize-MediumPlus);
+    margin: 0px 4px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+[b-n2qqg9bfh6] .ms-Button-menuIcon,
+[b-n2qqg9bfh6] .ms-Button-menuIcon .ms-Button-icon {
+    font-size: var(--fontSize-Small);
+    margin: 0px 4px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+
+[b-n2qqg9bfh6] .ms-Button-label {
+    font-weight: var(--fontWeight-SemiBold);
+    margin: 0px 4px;
+    line-height: 100%;
+    display: block;
+}
+
+
+[b-n2qqg9bfh6] .ms-Button-screenReaderText {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0px;
+    border: 0px;
+    overflow: hidden;
+}
+
+
+
+ .ms-Button-splitContainer[b-n2qqg9bfh6] {
+    display: inline-flex;
+    position: relative;
+}
+
+     .ms-Button-splitContainer .ms-Button--default:not(.ms-Button-menuIcon)[b-n2qqg9bfh6] {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: none;
+    }
+
+
+     .ms-Button-splitContainer .ms-Button--primary:not(.ms-Button-menuIcon)[b-n2qqg9bfh6] {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border: none;
+    }
+
+     .ms-Button-splitContainer .ms-Button-menuIcon[b-n2qqg9bfh6] {
+        padding: 6px;
+        height: 32px;
+        box-sizing: border-box;
+        border-radius: 0;
+        border-top-right-radius: var(--effects-RoundedCorner2);
+        border-bottom-right-radius: var(--effects-RoundedCorner2);
+        border:1px solid var(--palette-NeutralSecondaryAlt);
+        border-left: none;
+        outline: transparent;
+        user-select: none;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        vertical-align: top;
+        min-width: 32px;
+        width: 32px;
+        margin-left: -1px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+         .ms-Button-splitContainer .ms-Button-menuIcon.is-disabled[b-n2qqg9bfh6] {
+            border-color: var(--palette-NeutralLighter);
+            /* Hack to force disabled on border for splitbutton right side menu */
+        }
+
+ .ms-Button-divider[b-n2qqg9bfh6] {
+    position: absolute;
+    width: 1px;
+    right: 31px;
+    top: 8px;
+    bottom: 8px;
+}
+
+ .ms-Button--primary.ms-Button-divider[b-n2qqg9bfh6] {
+    background-color: var(--palette-White);
+}
+
+ .ms-Button--default.ms-Button-divider[b-n2qqg9bfh6] {
+    background-color: var(--semanticColors-BodyDivider);
+}
+
+ .ms-Button-divider.disabled[b-n2qqg9bfh6] {
+    background-color: var(--semanticColors-BodyDivider);
+}
+
+
+
+/* PRIMARY BUTTON */
+
+.ms-Button--primary[b-n2qqg9bfh6] {
+    color: var(--palette-White);
+    background-color: var(--palette-ThemePrimary);
+    border: none;
+    border-width: 0px;
+}
+
+.ms-Fabric--isFocusVisible .ms-Button--primary:focus[b-n2qqg9bfh6]:after {
+    outline: none;
+    border-color: var(--palette-White);
+}
+
+.ms-Button--primary:hover[b-n2qqg9bfh6] {
+    color: var(--palette-White);
+    background-color: var(--palette-ThemeDarkAlt);
+}
+
+.ms-Button--primary:active[b-n2qqg9bfh6] {
+    color: var(--palette-White);
+    background-color: var(--palette-ThemeDark);
+}
+
+.ms-Button--primary.is-checked:not(.is-disabled)[b-n2qqg9bfh6] {
+    color: var(--palette-White);
+    background-color: var(--palette-ThemeDark);
+    border: none;
+}
+
+.ms-Button--primary.is-checked:hover[b-n2qqg9bfh6] {
+    background-color: var(--palette-ThemePrimary);
+    color: var(--palette-White);
+    border: none;
+}
+
+@media screen and (-ms-high-contrast: active) {
+    .ms-Button--primary[b-n2qqg9bfh6] {
+        color: Window;
+        background-color: WindowText;
+        -ms-high-contrast-adjust: none;
+    }
+
+        .ms-Button--primary:hover[b-n2qqg9bfh6] {
+            color: Window;
+            background-color: Highlight;
+        }
+
+        .ms-Button--primary:active[b-n2qqg9bfh6] {
+            color: Window;
+            background-color: WindowText;
+            -ms-high-contrast-adjust: none;
+        }
+
+        .ms-Button--primary.is-disabled[b-n2qqg9bfh6] {
+            color: GrayText;
+            background-color: Window;
+            border-color: GrayText;
+        }
+}
+
+
+/* DEFAULT BUTTON */
+
+ .ms-Button--default[b-n2qqg9bfh6] {
+    color: var(--semanticTextColors-ButtonText);
+    background-color: var(--palette-White);
+    border: 1px solid var(--palette-NeutralSecondaryAlt);
+}
+    /*
+ .ms-Fabric--isFocusVisible .ms-Button--default:focus:after {
+    outline: none;
+    border-color: var(--palette-White);
+}
+*/
+    .ms-Button--default:hover[b-n2qqg9bfh6] {
+        color: var(--semanticTextColors-ButtonTextHovered);
+        background-color: var(--palette-NeutralLighter);
+    }
+
+    .ms-Button--default:active[b-n2qqg9bfh6] {
+        color: var(--semanticTextColors-ButtonTextChecked);
+        background-color: var(--palette-NeutralLight);
+    }
+
+     .ms-Button--default.is-checked:not(.is-disabled)[b-n2qqg9bfh6] {
+        color: var(--semanticTextColors-ButtonTextChecked);
+        background-color: var(--palette-NeutralLight);
+    }
+
+     .ms-Button--default.is-checked:hover[b-n2qqg9bfh6] {
+        background-color: var(--palette-NeutralLight);
+    }
+
+     .ms-Button--default.is-disabled[b-n2qqg9bfh6] {
+        background-color: var(--palette-NeutralLighter);
+        border-color: var(--palette-NeutralLighter);
+    }
+
+@media screen and (-ms-high-contrast: active) {
+     .ms-Button--default[b-n2qqg9bfh6] {
+        color: Highlight;
+        background-color: Highlight;
+    }
+}
+
+
+/* MessageBarButton */
+
+.ms-Button--messageBar[b-n2qqg9bfh6] {
+    height: 24px;
+    border-color: var(--palette-NeutralTertiaryAlt);
+}
+
+/* ActionButton */
+
+ .ms-Button.ms-Button--action[b-n2qqg9bfh6] {
+    min-width: unset;
+    padding: 0px 4px;
+    height: 40px;
+    color: var(--palette-NeutralPrimary);
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+    /*
+ .ms-Fabric--isFocusVisible .ms-Button--action:focus:after {
+    outline: none;
+    border-color: var(--palette-White);
+}
+*/
+     .ms-Button.ms-Button--action:hover[b-n2qqg9bfh6] {
+        color: var(--palette-ThemePrimary);
+    }
+
+    .ms-Button.ms-Button--action[b-n2qqg9bfh6]  .ms-Button-icon:hover {
+        color: var(--palette-ThemePrimary);
+    }
+
+     .ms-Button.ms-Button--action:active[b-n2qqg9bfh6] {
+        color: var(--palette-Black);
+    }
+
+     .ms-Button.ms-Button--action .ms-Button-icon:active[b-n2qqg9bfh6] {
+        color: var(--palette-ThemeDarker);
+    }
+
+     .ms-Button.ms-Button--action.is-expanded[b-n2qqg9bfh6] {
+        color: var(--palette-NeutralLight);
+    }
+
+     .ms-Button.ms-Button--action.is-disabled[b-n2qqg9bfh6] {
+        color: var(--palette-NeutralTertiary);
+        background-color: transparent;
+    }
+
+
+     .ms-Button.ms-Button--action.is-checked:not(.is-disabled)[b-n2qqg9bfh6] {
+        color: var(--palette-Black);
+    }
+
+    .ms-Button.ms-Button--action.is-checked[b-n2qqg9bfh6]  .ms-ButtonIcon {
+        color: var(--palette-ThemeDarker);
+    }
+
+    .ms-Button.ms-Button--action[b-n2qqg9bfh6]  .ms-Button-flexContainer {
+        justify-content: flex-start;
+    }
+
+    .ms-Button.ms-Button--action[b-n2qqg9bfh6]  .ms-Button-icon {
+        color: var(--palette-ThemeDarkAlt);
+    }
+
+    .ms-Button.ms-Button--action.is-disabled[b-n2qqg9bfh6]  .ms-Button-icon {
+        color: inherit;
+    }
+
+    .ms-Button.ms-Button--action[b-n2qqg9bfh6]  .ms-Button-menuIcon {
+        color: var(--palette-NeutralSecondary);
+    }
+
+    .ms-Button.ms-Button--action[b-n2qqg9bfh6]  .ms-Button-textContainer {
+        flex-grow: 0;
+    }
+
+     .ms-Button.ms-Button--action[b-n2qqg9bfh6]  .ms-Button-label {
+        font-weight: var(--fontWeight-Regular);
+    }
+
+@media screen and (-ms-high-contrast: active) {
+
+     .ms-Button.ms-Button--action:hover[b-n2qqg9bfh6] {
+        color: Highlight;
+        background-color: Highlight;
+    }
+}
+
+/* CommandBarButton */
+
+ .ms-Button.ms-Button--commandBar[b-n2qqg9bfh6] {
+    min-width: 40px;
+    padding: 0 4px;
+    height: 40px;
+    color: var(--palette-NeutralPrimary);
+    background-color: var(--palette-White);
+    border: none;
+    border-radius: 0;
+}
+    /*
+ .ms-Fabric--isFocusVisible .ms-Button--commandBar:focus:after {
+    outline: none;
+    border-color: var(--palette-White);
+}
+*/
+     .ms-Button.ms-Button--commandBar:hover[b-n2qqg9bfh6] {
+        color: var(--palette-NeutralDark);
+        background-color: var(--palette-NeutralLighter);
+    }
+
+        .ms-Button.ms-Button--commandBar:hover[b-n2qqg9bfh6]  .ms-Button-icon {
+            color: var(--palette-ThemeDarkAlt);
+        }
+
+        .ms-Button.ms-Button--commandBar:hover[b-n2qqg9bfh6]  .ms-Button-menuIcon {
+            color: var(--palette-NeutralPrimary);
+        }
+
+     .ms-Button.ms-Button--commandBar:active[b-n2qqg9bfh6] {
+        color: var(--semanticTextColors-Black);
+        background-color: var(--palette-NeutralLight);
+    }
+
+        .ms-Button.ms-Button--commandBar:active[b-n2qqg9bfh6]  .ms-Button-icon {
+            color: var(--palette-ThemeDarkAlt);
+        }
+
+        .ms-Button.ms-Button--commandBar:active[b-n2qqg9bfh6]  .ms-Button-menuIcon {
+            color: var(--palette-NeutralPrimary);
+        }
+
+
+
+     .ms-Button.ms-Button--commandBar.is-checked:not(.is-disabled)[b-n2qqg9bfh6] {
+        color: var(--Palette-NeutralDark);
+        background-color: var(--palette-NeutralLight);
+    }
+
+        .ms-Button.ms-Button--commandBar.is-checked:not(.is-disabled)[b-n2qqg9bfh6]  .ms-Button-icon {
+            color: var(--Palette-ThemeDark);
+        }
+
+        .ms-Button.ms-Button--commandBar.is-checked:not(.is-disabled)[b-n2qqg9bfh6]  .ms-Button-menuIcon {
+            color: var(--Palette-NeutralDark);
+            background-color: var(--palette-NeutralPrimary);
+        }
+
+
+         .ms-Button.ms-Button--commandBar.is-checked:not(.is-disabled):hover[b-n2qqg9bfh6] {
+            background-color: var(--palette-NeutralQuaternaryAlt);
+        }
+
+            .ms-Button.ms-Button--commandBar.is-checked:not(.is-disabled):hover[b-n2qqg9bfh6]  .ms-Button-icon {
+                color: var(--Palette-ThemeDark);
+            }
+
+            .ms-Button.ms-Button--commandBar.is-checked:not(.is-disabled):hover[b-n2qqg9bfh6]  .ms-Button-menuIcon {
+                color: var(--Palette-NeutralDark);
+                background-color: var(--palette-NeutralPrimary);
+            }
+
+
+
+
+     .ms-Button.ms-Button--commandBar.is-expanded[b-n2qqg9bfh6] {
+        background-color: var(--palette-NeutralLight);
+        color: var(--palette-NeutralDark);
+    }
+
+        .ms-Button.ms-Button--commandBar.is-expanded[b-n2qqg9bfh6]  .ms-Button-icon {
+            color: var(--palette-ThemeDark);
+        }
+
+        .ms-Button.ms-Button--commandBar.is-expanded[b-n2qqg9bfh6]  .ms-Button-menuIcon {
+            color: var(--palette-NeutralPrimary);
+        }
+
+
+
+     .ms-Button.ms-Button--commandBar.is-disabled[b-n2qqg9bfh6] {
+        background-color: var(--palette-White);
+    }
+
+        .ms-Button.ms-Button--commandBar.is-disabled[b-n2qqg9bfh6]  .ms-Button-icon {
+            color: var(--semanticTextColors-DisabledBodySubtext);
+        }
+
+
+    .ms-Button.ms-Button--commandBar[b-n2qqg9bfh6]  .ms-Button-icon {
+        color: var(--palette-ThemePrimary);
+    }
+
+    .ms-Button.ms-Button--commandBar[b-n2qqg9bfh6]  .ms-Button-label {
+        font-weight: normal;
+    }
+
+    .ms-Button.ms-Button--commandBar[b-n2qqg9bfh6]  .ms-Button-menuIcon {
+        color: var(--palette-NeutralSecondary);
+    }
+
+
+
+    /* IconButton */
+
+ .ms-Button--icon[b-n2qqg9bfh6] {
+    padding: 0 4px;
+    min-width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    color: var(--semanticTextColors-Link);
+}
+
+     .ms-Button--icon:hover[b-n2qqg9bfh6] {
+        color: var(--palette-ThemeDarkAlt);
+        background-color: var(--palette-NeutralLighter);
+    }
+
+     .ms-Button--icon:active[b-n2qqg9bfh6] {
+        color: var(--palette-ThemeDark);
+        background-color: var(--palette-NeutralLight);
+    }
+
+     .ms-Button--icon.is-checked:not(.is-disabled)[b-n2qqg9bfh6] {
+        color: var(--palette-ThemeDark);
+        background-color: var(--palette-NeutralLight);
+        border: none;
+    }
+
+     .ms-Button--icon.is-checked:hover[b-n2qqg9bfh6] {
+        background-color: var(--palette-NeutralQuaternaryAlt);
+        color: var(--palette-ThemeDark);
+    }
+
+     .ms-Button--icon.is-disabled[b-n2qqg9bfh6] {
+        border-color: var(--palette-NeutralQuaternaryAlt);
+    }
+
+@media screen and (-ms-high-contrast: active) {
+     .ms-Button.ms-Button--icon:hover[b-n2qqg9bfh6] {
+        color: Highlight;
+        background-color: Highlight;
+    }
+}
+
+
+
+/* CommandButton */
+
+ .ms-Button.ms-Button--command[b-n2qqg9bfh6] {
+    min-width: unset;
+    padding: 0px 4px;
+    height: 40px;
+    color: var(--palette-NeutralPrimary);
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+    /*
+ .ms-Fabric--isFocusVisible .ms-Button--command:focus:after {
+    outline: none;
+    border-color: var(--palette-White);
+}
+*/
+     .ms-Button.ms-Button--command:hover[b-n2qqg9bfh6] {
+        color: var(--palette-ThemePrimary);
+    }
+
+     .ms-Button.ms-Button--command.is-expanded[b-n2qqg9bfh6] {
+        color: var(--palette-ThemePrimary);
+    }
+
+    .ms-Button.ms-Button--command[b-n2qqg9bfh6]  .ms-Button-icon:hover {
+        color: var(--palette-ThemePrimary);
+    }
+
+
+     .ms-Button.ms-Button--command:active[b-n2qqg9bfh6] {
+        color: var(--palette-Black);
+    }
+
+    .ms-Button.ms-Button--command[b-n2qqg9bfh6]  .ms-Button-icon:active {
+        color: var(--palette-ThemeDarker);
+    }
+
+    /*  .ms-Button.ms-Button--command.is-expanded {
+        color: var(--palette-NeutralLight);
+    }*/
+
+     .ms-Button.ms-Button--command.is-disabled[b-n2qqg9bfh6] {
+        color: var(--palette-NeutralTertiary);
+        background-color: transparent;
+    }
+
+
+     .ms-Button.ms-Button--command.is-checked:not(.is-disabled)[b-n2qqg9bfh6] {
+        color: var(--palette-Black);
+    }
+
+    .ms-Button.ms-Button--command.is-checked[b-n2qqg9bfh6]  .ms-ButtonIcon {
+        color: var(--palette-ThemeDarker);
+    }
+
+    .ms-Button.ms-Button--command[b-n2qqg9bfh6]  .ms-Button-flexContainer {
+        justify-content: flex-start;
+    }
+
+    .ms-Button.ms-Button--command[b-n2qqg9bfh6]  .ms-Button-icon {
+        color: var(--palette-ThemeDarkAlt);
+    }
+
+    .ms-Button.ms-Button--command.is-disabled[b-n2qqg9bfh6]  .ms-Button-icon {
+        color: inherit;
+    }
+
+    .ms-Button.ms-Button--command[b-n2qqg9bfh6]  .ms-Button-menuIcon {
+        color: var(--palette-NeutralSecondary);
+    }
+
+    .ms-Button.ms-Button--command[b-n2qqg9bfh6]  .ms-Button-textContainer {
+        flex-grow: 0;
+    }
+
+    .ms-Button.ms-Button--command[b-n2qqg9bfh6]  .ms-Button-label {
+        font-weight: var(--fontWeight-Regular);
+    }
+
+@media screen and (-ms-high-contrast: active) {
+
+     .ms-Button.ms-Button--command:hover[b-n2qqg9bfh6] {
+        color: Highlight;
+        background-color: Highlight;
+    }
+}
+
+
+
+/* CompoundButton */
+ .ms-Button.ms-Button--compound[b-n2qqg9bfh6] {
+    max-width: 280px;
+    min-height: 72px;
+    padding: 16px 12px;
+    height: auto;
+}
+
+    .ms-Button.ms-Button--compound[b-n2qqg9bfh6]  .ms-Button-flexContainer {
+        flex-direction: row;
+        align-items: flex-start;
+        min-width: 100%;
+        margin: unset;
+    }
+
+    .ms-Button.ms-Button--compound[b-n2qqg9bfh6]  .ms-Button-textContainer {
+        text-align: left;
+    }
+
+    .ms-Button.ms-Button--compound[b-n2qqg9bfh6]  .ms-Button-label {
+        margin: 0 0 5px 0;
+        line-height: 100%;
+        font-weight: var(--fontWeight-SemiBold);
+    }
+
+    .ms-Button.ms-Button--compound[b-n2qqg9bfh6]  .ms-Button-description {
+        line-height: 100%;
+    }
+
+
+.ms-Button--default.ms-Button--compound[b-n2qqg9bfh6]  .ms-Button-description {
+    color: var(--palette-NeutralSecondary);
+}
+
+
+.ms-Button--default.ms-Button--compound:hover[b-n2qqg9bfh6]  .ms-Button-description {
+    color: var(--palette-NeutralDark);
+}
+
+.ms-Button--default.ms-Button--compound.is-checked[b-n2qqg9bfh6]  .ms-Button-description {
+    color: inherit;
+}
+
+
+.ms-Button--default.ms-Button--compound.is-disabled[b-n2qqg9bfh6]  .ms-Button-description {
+    color: inherit;
+}
+
+
+.ms-Button--primary.ms-Button--compound[b-n2qqg9bfh6]  .ms-Button-description {
+    color: var(--palette-White);
+}
+
+
+.ms-Button--primary.ms-Button--compound:hover[b-n2qqg9bfh6]  .ms-Button-description {
+    color: var(--palette.White);
+}
+
+.ms-Button--primary.ms-Button--compound.is-checked[b-n2qqg9bfh6]  .ms-Button-description {
+    color: inherit;
+}
+
+
+.ms-Button--primary.ms-Button--compound.is-disabled[b-n2qqg9bfh6]  .ms-Button-description {
+    color: inherit;
+}

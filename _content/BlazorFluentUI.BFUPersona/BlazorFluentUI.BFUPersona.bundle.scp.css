@@ -1,0 +1,149 @@
+@import '';
+
+/* _content/BlazorFluentUI.BFUPersona/BFUPersona.razor.rz.scp.css */
+.ms-Persona[b-es6qzrzb1n] {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--semanticTextColors-BodyText);
+    position: relative;
+    height: 48px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+}
+
+
+.ms-Persona-details[b-es6qzrzb1n] {
+    padding: 0 24px 0 16px;
+    min-width: 0;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.ms-Persona-primaryText[b-es6qzrzb1n] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--semanticTextColors-BodyText);
+    font-weight: var(--fontWeight-Regular);
+    font-size: var(--fontSize-Medium);
+}
+
+
+    .ms-Persona-primaryText:hover[b-es6qzrzb1n] {
+        color: var(--semanticTextColors-InputTextHovered);
+    }
+
+
+.ms-Persona-secondaryText[b-es6qzrzb1n] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--semanticTextColors-BodySubtext);
+    font-weight: var(--fontWeight-Regular);
+    font-size: var(--fontSize-Small);
+}
+
+
+.ms-Persona-tertiaryText[b-es6qzrzb1n] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--semanticTextColors-BodySubtext);
+    font-weight: var(--fontWeight-Regular);
+    font-size: var(--fontSize-Small);
+}
+
+.ms-Persona-optionalText[b-es6qzrzb1n] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--semanticTextColors-BodySubtext);
+    font-weight: var(--fontWeight-Regular);
+    font-size: var(--fontSize-Small);
+}
+
+
+.ms-Persona-textContent[b-es6qzrzb1n] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* _content/BlazorFluentUI.BFUPersona/BFUPersonaCoin.razor.rz.scp.css */
+.ms-Persona-size10WithoutPresenceIcon[b-9ngkx01so6] {
+    font-size: var(--fontSize-XSmall);
+    position: absolute;
+    top: 5px;
+    right: auto;
+    left: 0;
+}
+
+.ms-Persona-imageArea[b-9ngkx01so6] {
+    position: relative;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+[b-9ngkx01so6] .ms-Persona-image {
+    margin-right: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 50%;
+    perspective: 1px;
+}
+
+.ms-Persona-initials[b-9ngkx01so6] {
+    border-radius: 50%;
+    color: var(--palette-White);
+    font-size: var(--fontSize-Large);
+    font-weight: var(--fontWeight-SemiBold);
+}
+
+.ms-Persona-initials--showUnknownPersonaCoin[b-9ngkx01so6] {
+    color: rgb(168, 0, 0);
+}
+/* _content/BlazorFluentUI.BFUPersona/BFUPersonaPresence.razor.rz.scp.css */
+.ms-Persona-presence[b-cuhhlmhcie] {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    top: auto;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid var(--semanticColors-BodyBackground);
+    text-align: center;
+    box-sizing: content-box;
+    background-clip: content-box;
+    -ms-high-contrast-adjust: none;
+}
+
+@media screen and (-ms-high-contrast: active) {
+    .ms-Persona-presence[b-cuhhlmhcie] {
+        border-color: Window;
+        background-color: WindowText;
+    }
+}
+
+[b-cuhhlmhcie] .ms-Persona-icon {
+    color: var(--semanticColors-BodyBackground);
+    font-size: 6px;
+    line-height: 12px;
+    vertical-align: top;
+}
+
+@media screen and (-ms-high-contrast: active) {
+    [b-cuhhlmhcie] .ms-Persona-icon {
+        color: Window;
+    }
+}

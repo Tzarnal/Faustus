@@ -1,0 +1,26 @@
+@import '';
+
+/* _content/BlazorFluentUI.BFUOverlay/BFUOverlay.razor.rz.scp.css */
+.ms-Overlay[b-szh888pa16] {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.ms-Overlay--light[b-szh888pa16] {
+    background-color: var(--palette-WhiteTranslucent40);
+}
+
+.ms-Overlay--dark[b-szh888pa16] {
+    background-color: var(--palette-BlackTranslucent40);
+}
+
+
+@media screen and (-ms-high-contrast: active) {
+    .ms-Overlay[b-szh888pa16] {
+        border: 1px solid WindowText;
+        opacity: 0;
+    }
+}

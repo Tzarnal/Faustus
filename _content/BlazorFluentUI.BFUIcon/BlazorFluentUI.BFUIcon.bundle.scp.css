@@ -1,0 +1,12 @@
+@import '';
+
+/* _content/BlazorFluentUI.BFUIcon/BFUIcon.razor.rz.scp.css */
+.ms-Icon[b-pbs2uhc0d0] {
+    display: inline-block;
+}
+.ms-Icon-placeHolder[b-pbs2uhc0d0] {
+    width: 1em;
+}
+.ms-Icon-imageContainer[b-pbs2uhc0d0] {
+    overflow: hidden;
+}

@@ -1,0 +1,24 @@
+@import '';
+
+/* _content/BlazorFluentUI.BFUCallout/BFUCalloutContent.razor.rz.scp.css */
+.ms-Callout-container[b-t3xi9atko7] {
+    position: relative;
+}
+
+.ms-Callout-beakCurtain[b-t3xi9atko7] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--semanticColors-MenuBackground);
+    border-radius: var(--effects-RoundedCorner2);
+}
+
+@media screen and (-ms-high-contrast:active) {
+    .ms-Callout[b-t3xi9atko7] {
+        border-width: 1px;
+        border-style: solid;
+        border-color: WindowText;
+    }
+}

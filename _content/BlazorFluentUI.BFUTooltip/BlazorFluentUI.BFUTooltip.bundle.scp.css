@@ -1,0 +1,23 @@
+@import '';
+
+/* _content/BlazorFluentUI.BFUTooltip/BFUTooltip.razor.rz.scp.css */
+.ms-Tooltip-content[b-xzfgxl2sgd] {
+    position: relative;
+    z-index: 1;
+    color: var(--semanticTextColors-MenuItemText);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    font-size: var(--fontSize-Small);
+    font-weight: var(--fontWeight-Regular);
+}
+.ms-Tooltip-subtext[b-xzfgxl2sgd] {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    margin: 0;
+}
+/* _content/BlazorFluentUI.BFUTooltip/BFUTooltipHost.razor.rz.scp.css */
+.ms-TooltipHost[b-5x35w5b6p9] {
+    display: inline;
+}

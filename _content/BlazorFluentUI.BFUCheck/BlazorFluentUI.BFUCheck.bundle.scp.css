@@ -1,0 +1,99 @@
+@import '';
+
+/* _content/BlazorFluentUI.BFUCheck/BFUCheck.razor.rz.scp.css */
+.root .ms-Check[b-o0hpbosylg] {
+    line-height: 1;
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+    position: relative;
+    user-select: none;
+}
+
+    .root[b-o0hpbosylg]  .ms-Check::before {
+        content: '';
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+        left: 1px;
+        border-radius: 50%;
+        opacity: 1;
+        background: var(--semanticColors-BodyBackground);
+    }
+
+    .ms-Check-checkHost:hover .ms-Check[b-o0hpbosylg], .ms-Check-checkHost:focus .ms-Check[b-o0hpbosylg], .ms-Check:focus[b-o0hpbosylg] {
+        opacity: 1;
+    }
+
+    .root[b-o0hpbosylg]  .ms-Check.is-checked::before {
+        content: '';
+        opacity: 1;
+        background: var(--palette-ThemePrimary);
+    }
+
+@media screen and (-ms-high-contrast: active) {
+    .ms-Check.is-checked[b-o0hpbosylg]:before {
+        background: Window;
+    }
+}
+
+/*Circle*/
+[b-o0hpbosylg] .ms-Check-circle {
+    color: var(--palette-NeutralSecondary);
+    font-size: 18px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ms-Check.is-checked[b-o0hpbosylg]  .ms-Check-circle {
+    color: var(--palette-White);
+}
+@media screen and (-ms-high-contrast: active) {
+    [b-o0hpbosylg] .ms-Check-circle.is-checked:before {
+        color: WindowText;
+    }
+}
+
+/*Check*/
+[b-o0hpbosylg] .ms-Check-check {
+    font-size: 18px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    vertical-align: middle;
+    opacity: 0;
+    color: var(--palette-NeutralSecondary);
+    font-size: var(--iconFontSize-Medium); /*  //This is technically IconFontSize.Medium which is equivalent to FontSize.MediumPlus (16px)*/
+    left: 0.5px; /*//isRTL ignored*/
+}
+
+    .ms-Check-check:hover[b-o0hpbosylg] {
+        opacity: 1;
+    }
+
+@media screen and (-ms-high-contrast: active) {
+    .ms-Check-check[b-o0hpbosylg] {
+        -ms-high-contrast-adjust: none;
+    }
+}
+
+.ms-Check.is-checked[b-o0hpbosylg]  .ms-Check-check {
+    opacity: 1;
+    color: var(--palette-White);
+    font-weight: 900;
+}
+@media screen and (-ms-high-contrast: active) {
+    .ms-Check.is-checked .ms-Check-check[b-o0hpbosylg] {
+        border: none;
+        color: WindowText;
+    }
+}

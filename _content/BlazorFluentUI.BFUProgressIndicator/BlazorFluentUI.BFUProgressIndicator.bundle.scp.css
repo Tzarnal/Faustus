@@ -1,0 +1,63 @@
+@import '';
+
+/* _content/BlazorFluentUI.BFUProgressIndicator/BFUProgressIndicator.razor.rz.scp.css */
+@keyframes IndeterminateProgress-b-4olti4beg4 {
+    0% {
+        left: -30%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+@keyframes IndeterminateProgressRTL-b-4olti4beg4 {
+    100% {
+        right: -30%;
+    }
+
+    0% {
+        right: 100%;
+    }
+}
+
+.ms-ProgressIndicator-itemName[b-4olti4beg4] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--semanticTextColors-BodyText);
+    padding-top: 4px;
+    line-height: 20px;
+}
+.ms-ProgressIndicator-itemDescription[b-4olti4beg4] {
+    color: var(--semanticTextColors-BodySubtext);
+    font-size: var(--fontSize-Small);
+    line-height: 18px;
+}
+
+.ms-ProgressIndicator-progressBar[b-4olti4beg4] {
+    background-color: var(--palette-ThemePrimary);
+    position: absolute;
+    transition: width .15s linear;
+    width: 0;
+}
+
+.is-indeterminate .ms-ProgressIndicator-progressBar[b-4olti4beg4] {
+    transition: width .3s ease;
+    min-width: 33%;
+    background: linear-gradient(to right,var(--palette-NeutralLight) 0%,var(--palette-ThemePrimary) 50%, var(--palette-NeutralLight) 100%);
+    animation: IndeterminateProgress-b-4olti4beg4 3s infinite;
+}
+
+.isRTL .is-indeterminate .ms-ProgressIndicator-progressBar[b-4olti4beg4] {
+    animation: IndeterminateProgressRTL-b-4olti4beg4 3s infinite;
+}
+
+@media screen and (-ms-high-contrast: active) {
+    .ms-ProgressIndicator-progressTrack[b-4olti4beg4] {
+        border-bottom: 1px solid WindowText;
+    }
+
+    .ms-ProgressIndicator-progressBar[b-4olti4beg4] {
+        background-color: WindowText;
+    }
+}

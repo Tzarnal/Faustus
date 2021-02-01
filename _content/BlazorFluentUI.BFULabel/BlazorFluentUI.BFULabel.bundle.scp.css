@@ -1,0 +1,27 @@
+@import '';
+
+/* _content/BlazorFluentUI.BFULabel/BFULabel.razor.rz.scp.css */
+.ms-Label[b-q56vb7ev7o] {
+    font-weight: var(--fontWeight-SemiBold);
+    color: var(--semanticTextColors-BodyText);
+    box-sizing: border-box;
+    box-shadow: none;
+    margin: 0;
+    display: block;
+    padding: 5px 0px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.ms-Label--disabled[b-q56vb7ev7o] {
+    color: var(--semanticTextColors-DisabledBodyText);
+}
+.ms-Label--required[b-q56vb7ev7o]::after {
+    content: ' *';
+    color: var(--semanticTextColors-ErrorText);
+    padding-right: 12px;
+}
+@media screen and (-ms-high-contrast: active) {
+    .ms-Label--disabled[b-q56vb7ev7o] {
+        color: GrayText;
+    }
+}
