@@ -34,7 +34,7 @@ jobs:
 
       # Publish the site
       - name: Publish
-        run: dotnet publish Bonsai.sln -c Release -o public -p:GHPages=true
+        run: dotnet publish Faustus.sln -c Release -o public -p:GHPages=true
 
       # Deploy the site
       - name: Deploy
