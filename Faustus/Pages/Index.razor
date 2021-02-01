@@ -1,43 +1,165 @@
 ﻿@page "/"
 <div class="bg-gray-200 w-screen h-screen">
+    <div class="p-4">
+        <h2 class="text-2xl">Price</h2>
+    </div>
+
     <div class="flex flex-col md:flex-row px-8">
-        <div class="flex-initial p-4 w-80">
+        <div class="flex-initial pb-4 w-80">
             <BFUTextField Label="Price Note" ReadOnly="true"
                           @bind-value="_priceNote" />
         </div>
-        <div class="flex-initial p-4 md:self-end w-60">
-            <BlazorFluentUI.BFUDefaultButton @onclick="CopyPriceNote">
+        <div class="flex-initial pb-4 md:self-end w-60">
+            <BFUPrimaryButton @onclick="CopyPriceNote">
                 Copy to Clipboard
-            </BlazorFluentUI.BFUDefaultButton>
+            </BFUPrimaryButton>
         </div>
     </div>
 
     <div class="flex px-8">
-        <div class="flex-initial p-4 w-40">
+        <div class="flex-initial pb-4 pr-2 w-40">
             <BFUTextField Label="Amount They Get" @bind-value="_stackSize" />
         </div>
-        <div class="flex-initial p-4 w-40">
+        <div class="flex-initial pb-4 pl-2 w-40">
             <BFUTextField Label="Amount I Want" @bind-value="_cost" />
         </div>
     </div>
 
-    <hr />
-    <p>
-        What I Want
-    </p>
+    <div class="pt-8 p-4">
+        <h2 class="text-2xl pb-4">What I Want</h2>
+    </div>
 
-    <div class="px-8 bg-black w-auto h-auto ">
-        <BFUActionButton OnClick=@(() => UpdateCurrency("chaos"))>
-            <img class="w-10 h-10 p-1 hover:bg-gray-600"
-                 src="https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollRare.png" />
-        </BFUActionButton>
-        <BFUActionButton OnClick=@(() => UpdateCurrency("alch"))>
-            <img class="w-10 h-10 p-1 hover:bg-gray-600"
-                 src="https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeToRare.png" />
-        </BFUActionButton>
-        <BFUActionButton OnClick=@(() => UpdateCurrency("exalted"))>
-            <img class="w-10 h-10 p-1 hover:bg-gray-600"
-                 src="https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyAddModToRare.png" />
-        </BFUActionButton>
+    <div class="px-8 bg-black w-auto h-auto text-gray-200 p-4 flex flex-col md:flex-row">
+        <div class="p-2 px-4">
+            <h2 class="text-2xl pb-4">Common Trade Currencies</h2>
+            <div class="">                
+                <BFUActionButton OnClick=@(() => UpdateCurrency("exalted"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Exalted Orb" title="Exalted Orb"
+                         src="img/currency/exalted.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("chaos"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Chaos Orb" title="Chaos Orb"
+                         src="img/currency/chaos.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("alch"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Orb of Alchemy" title="Orb of Alchemy"
+                         src="img/currency/alch.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("chisel"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Cartographer's Chisel " title="Cartographer's Chisel "
+                         src="img/currency/chisel.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("alt"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt=" Orb of Alteration " title=" Orb of Alteration "
+                         src="img/currency/alteration.png" />
+                </BFUActionButton>
+            </div>
+            <div class="">
+
+                <BFUActionButton OnClick=@(() => UpdateCurrency("mirror"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt=" Mirror of Kalandra " title="Mirror of Kalandra "
+                         src="img/currency/mirror.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("vaal"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Vaal Orb" title="Vaal Orb"
+                         src="img/currency/vaal.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("gcp"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Gemcutter's Prism " title="Gemcutter's Prism "
+                         src="img/currency/gcp.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("fusing"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Orb of Fusing " title="Orb of Fusing "
+                         src="img/currency/fusing.png" />
+                </BFUActionButton>
+            </div>
+            <div class="">
+                <BFUActionButton OnClick=@(() => UpdateCurrency("mirror-shard"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Mirror Shard" title="Mirror Shard"
+                         src="img/currency/m-shard.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("exalted-shard"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Exalted Shard" title="Exalted Shard"
+                         src="img/currency/e-shard.png" />
+                </BFUActionButton>
+            </div>
+        </div>
+        
+        <div class="p-2 px-4">
+            <h2 class="text-2xl pb-4">Other</h2>
+            <div>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("apprentice-sextant"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Simple Sextant" title="Simple Sextant"
+                         src="img/currency/asex.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("journeyman-sextant"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="journeyman Sextant" title="journeyman Sextant"
+                         src="img/currency/jsex.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("master-sextant"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Awakened Sextant" title="Awakened Sextant"
+                         src="img/currency/msex.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("elevated-sextant"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Elevated Sextant" title="Elevated Sextant"
+                         src="img/currency/esex.png" />
+                </BFUActionButton>
+            </div>
+            <div>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("silver"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Silver Coin" title="Silver Coin"
+                         src="img/currency/silver.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("p"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Perandus Coin" title="Perandus Coin"
+                         src="img/currency/perandus.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("rogues-marker"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Rogue's Marker" title="Rogue's Marker"
+                         src="img/currency/rogue.png" />
+                </BFUActionButton>
+            </div>
+            <div>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("regret"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Orb of Regret" title="Orb of Regret"
+                         src="img/currency/regret.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("scour"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Orb of Scouring" title="Orb of Scouring"
+                         src="img/currency/scour.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("orb-of-unmaking"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Orb of Unmaking" title="Orb of Unmaking"
+                         src="img/currency/unmaking.png" />
+                </BFUActionButton>
+
+            </div>
+            
+            <div>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("mavens-orb"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Maven's Orb" title="Maven's Orb"
+                         src="img/currency/maven.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("ritual-vessel"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Ritual Vessel" title="Ritual Vessel"
+                         src="img/currency/rvessel.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("ritual-splinter"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Ritual Splinter" title="Ritual Splinter"
+                         src="img/currency/r-splinter.png" />
+                </BFUActionButton>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-8 p-4">
+        <h2 class="text-2xl pb-4">I Need Something Else</h2>
+        <p class="px-8 pt-2">
+            A complete and potentially more up to date list of allowed items and the names to use in trade notes can be found on GGG's <a href="https://www.pathofexile.com/trade/about">Trade Website</a>.
+        </p>
+        <p class="px-8 pt-2">
+            You can use <a href="https://poemap.live/">PoeMap</a> to arrange trading for sets of maps and fragments.
+        </p>
     </div>
 </div>

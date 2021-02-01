@@ -9,7 +9,7 @@ namespace Faustus.Pages
     {
         public string _stackSize { get; set; } = "1";
         public string _cost { get; set; } = "1";
-        public string _currency { get; set; } = "c";
+        public string _currency { get; set; } = "chaos";
 
         public string _priceNote { get; set; }
 
