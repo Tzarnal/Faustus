@@ -8,9 +8,11 @@
     variants: {
         extend: {
             display: ['group-hover'],
+            borderWidth: ['hover', 'focus'],
+            padding: ['hover', 'focus'],
         }
     },
-    plugins: [        
+    plugins: [
         require('@tailwindcss/forms'),
     ],
 }
