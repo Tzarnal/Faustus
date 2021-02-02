@@ -1,12 +1,12 @@
 ﻿@page "/"
 <div class="bg-gray-200 w-screen h-screen">
     <div class="hidden md:inline md:float-right w-80">
-        <img class="object-center mx-auto pb-4" src="img/Faustus_icon.png"/>
+        <img class="object-center mx-auto pb-4" src="img/Faustus_icon.png" />
         <p class="font-bold">
             <span class="text-2xl">“</span>I take those goods and sell them to the nobility for something I find more useful — coin...<span class="text-2xl">”</span>
         </p>
     </div>
-    
+
     <div class="p-4">
         <h2 class="text-2xl">Price</h2>
     </div>
@@ -39,7 +39,7 @@
     <div class="px-8 bg-black w-auto h-auto text-gray-200 p-4 flex flex-col md:flex-row">
         <div class="p-2 px-4">
             <h2 class="text-2xl pb-4">Common Trade Currencies</h2>
-            <div class="">                
+            <div class="">
                 <BFUActionButton OnClick=@(() => UpdateCurrency("exalted"))>
                     <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Exalted Orb" title="Exalted Orb"
                          src="img/currency/exalted.png" />
@@ -91,9 +91,41 @@
                 </BFUActionButton>
             </div>
         </div>
-        
+
         <div class="p-2 px-4">
-            <h2 class="text-2xl pb-4">Other</h2>
+            <h2 class="text-2xl pb-4">Orbs</h2>
+            <div>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("crusaders-exalted-orb"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Crusader's Exalted Orb" title="Crusader's Exalted Orb"
+                         src="img/currency/corb.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("redeemers-exalted-orb"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Redeemer's Exalted Orb" title="Redeemer's Exalted Orb"
+                         src="img/currency/rorb.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("hunters-exalted-orb"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Hunter's Exalted Orb" title="Hunter's Exalted Orb"
+                         src="img/currency/horb.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("warlords-exalted-orb"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Warlord's Exalted Orb" title="Warlord's Exalted Orb"
+                         src="img/currency/worb.png" />
+                </BFUActionButton>
+            </div>
+            <div>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("awakeners-orb"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Awakener's Orb" title="Awakener's Orb"
+                         src="img/currency/aorb.png" />
+                </BFUActionButton>
+                <BFUActionButton OnClick=@(() => UpdateCurrency("mavens-orb"))>
+                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Maven's Orb" title="Maven's Orb"
+                         src="img/currency/maven.png" />
+                </BFUActionButton>
+            </div>
+        </div>
+
+        <div class="p-2 px-4">
+            <h2 class="text-2xl pb-4">Uncommon</h2>
             <div>
                 <BFUActionButton OnClick=@(() => UpdateCurrency("apprentice-sextant"))>
                     <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Simple Sextant" title="Simple Sextant"
@@ -139,14 +171,9 @@
                     <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Orb of Unmaking" title="Orb of Unmaking"
                          src="img/currency/unmaking.png" />
                 </BFUActionButton>
-
             </div>
-            
+
             <div>
-                <BFUActionButton OnClick=@(() => UpdateCurrency("mavens-orb"))>
-                    <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Maven's Orb" title="Maven's Orb"
-                         src="img/currency/maven.png" />
-                </BFUActionButton>
                 <BFUActionButton OnClick=@(() => UpdateCurrency("ritual-vessel"))>
                     <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Ritual Vessel" title="Ritual Vessel"
                          src="img/currency/rvessel.png" />
@@ -155,7 +182,24 @@
                     <img class="w-10 h-10 p-1 hover:bg-gray-600" alt="Ritual Splinter" title="Ritual Splinter"
                          src="img/currency/r-splinter.png" />
                 </BFUActionButton>
+            </div>
+        </div>
 
+        <div class="p-2 px-4">
+            <h2 class="text-2xl pb-4">Lists</h2>
+            <div>
+                <BFUDropdown ItemsSource=@_delveItems
+                             Placeholder="Delve"
+                             OnChange=@DropdownChangeHandler
+                             Style="width:250px;" />
+                <BFUDropdown ItemsSource=@_scarabs
+                             Placeholder="Scarabs"
+                             OnChange=@DropdownChangeHandler
+                             Style="width:250px;" />
+                <BFUDropdown ItemsSource=@_oils
+                             Placeholder="Oils & Catalysts"
+                             OnChange=@DropdownChangeHandler
+                             Style="width:250px;" />
             </div>
         </div>
     </div>
