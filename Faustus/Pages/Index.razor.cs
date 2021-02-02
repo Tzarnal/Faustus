@@ -14,6 +14,8 @@ namespace Faustus.Pages
         public string _currency { get; set; } = "chaos";
         public string _priceNote { get; set; }
 
+        private List<IBFUDropdownOption> _currencies { get; set; }
+        private List<IBFUDropdownOption> _shards { get; set; }
         private List<IBFUDropdownOption> _delveItems { get; set; }
         private List<IBFUDropdownOption> _scarabs { get; set; }
         private List<IBFUDropdownOption> _oils { get; set; }
@@ -25,11 +27,12 @@ namespace Faustus.Pages
         protected override async Task OnInitializedAsync()
         {
             UpdatePriceNote();
+            _currencies = CurrencyDropdowns.Currencies;
+            _shards = CurrencyDropdowns.Shards;
             _delveItems = CurrencyDropdowns.DelveItems;
             _scarabs = CurrencyDropdowns.Scarabs;
             _oils = CurrencyDropdowns.OilsCatalysts;
             _delerium = CurrencyDropdowns.Delerium;
-
         }
 
         public void UpdatePriceNote()

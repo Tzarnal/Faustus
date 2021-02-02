@@ -29,7 +29,7 @@
         </div>
         <div class="flex-initial pb-4 pl-2 w-40">
             <BFUTextField Label="Amount They Get" @bind-value="_stackSize" />
-        </div>        
+        </div>
     </div>
 
     <div class="pt-8 p-4">
@@ -188,6 +188,14 @@
         <div class="p-2 px-4">
             <h2 class="text-2xl pb-4">Lists</h2>
             <div>
+                <BFUDropdown ItemsSource=@_currencies
+                             Placeholder="Currencies"
+                             OnChange=@DropdownChangeHandler
+                             Style="width:250px;" />
+                <BFUDropdown ItemsSource=@_shards
+                             Placeholder="Shards"
+                             OnChange=@DropdownChangeHandler
+                             Style="width:250px;" />
                 <BFUDropdown ItemsSource=@_delveItems
                              Placeholder="Delve"
                              OnChange=@DropdownChangeHandler

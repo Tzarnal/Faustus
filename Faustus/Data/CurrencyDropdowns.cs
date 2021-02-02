@@ -8,6 +8,8 @@ namespace Faustus.Data
 {
     public static class CurrencyDropdowns
     {
+        public static List<IBFUDropdownOption> Currencies;
+        public static List<IBFUDropdownOption> Shards;
         public static List<IBFUDropdownOption> DelveItems;
         public static List<IBFUDropdownOption> Scarabs;
         public static List<IBFUDropdownOption> OilsCatalysts;
@@ -19,6 +21,8 @@ namespace Faustus.Data
             ScarabItemsBuilder();
             OilsCatalystsBuilder();
             DeleriumBuilder();
+            CurrenciesBuilder();
+            ShardsBuilder();
         }
 
         private static void DelveItemsBuilder()
@@ -134,6 +138,85 @@ namespace Faustus.Data
             };
         }
 
+        private static void CurrenciesBuilder()
+        {
+            Currencies = new List<IBFUDropdownOption>
+            {
+                new BFUDropdownOption { Text = "Currencies", Key = "Currencies", ItemType = SelectableOptionMenuItemType.Header },
+
+                new BFUDropdownOption { Text = "Orb of Alteration",Key = "alt",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Orb of Fusing",Key = "fusing",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Orb of Alchemy",Key = "alch",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Chaos Orb",Key = "chaos",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Gemcutter's Prism",Key = "gcp",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Exalted Orb",Key = "exalted",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Chromatic Orb",Key = "chrome",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Jeweller's Orb",Key = "jewellers",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Engineer's Orb",Key = "engineers",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Infused Engineer's Orb",Key = "infused-engineers-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Orb of Chance",Key = "chance",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Cartographer's Chisel",Key = "chisel",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Orb of Scouring",Key = "scour",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Blessed Orb",Key = "blessed",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Orb of Regret",Key = "regret",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Regal Orb",Key = "regal",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Divine Orb",Key = "divine",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Vaal Orb",Key = "vaal",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Orb of Annulment",Key = "annul",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Orb of Binding",Key = "orb-of-binding",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Ancient Orb",Key = "ancient-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Orb of Horizons",Key = "orb-of-horizons",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Harbinger's Orb",Key = "harbingers-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Scroll of Wisdom",Key = "wisdom",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Portal Scroll",Key = "portal",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Armourer's Scrap",Key = "scrap",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Blacksmith's Whetstone",Key = "whetstone",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Glassblower's Bauble",Key = "bauble",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Orb of Transmutation",Key = "transmute",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Orb of Augmentation",Key = "aug",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Mirror of Kalandra",Key = "mirror",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Eternal Orb",Key = "eternal",  ItemType = SelectableOptionMenuItemType.Normal },
+
+                new BFUDropdownOption { Text = "Coins", Key = "Coins", ItemType = SelectableOptionMenuItemType.Header },
+                new BFUDropdownOption { Text = "Perandus Coin",Key = "p",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Rogue's Marker",Key = "rogues-marker",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Silver Coin",Key = "silver",  ItemType = SelectableOptionMenuItemType.Normal },
+
+                new BFUDropdownOption { Text = "Orbs", Key = "Orbs", ItemType = SelectableOptionMenuItemType.Header },
+                new BFUDropdownOption { Text = "Crusader's Exalted Orb",Key = "crusaders-exalted-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Redeemer's Exalted Orb",Key = "redeemers-exalted-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Hunter's Exalted Orb",Key = "hunters-exalted-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Warlord's Exalted Orb",Key = "warlords-exalted-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Awakener's Orb",Key = "awakeners-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Maven's Orb",Key = "mavens-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+
+                new BFUDropdownOption { Text = "Heist", Key = "Heist", ItemType = SelectableOptionMenuItemType.Header },
+                new BFUDropdownOption { Text = "Facetor's Lens",Key = "facetors",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Prime Regrading Lens",Key = "prime-regrading-lens",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Secondary Regrading Lens",Key = "secondary-regrading-lens",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Tempering Orb",Key = "tempering-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Tailoring Orb",Key = "tailoring-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+
+                new BFUDropdownOption { Text = "Sextant", Key = "Sextant", ItemType = SelectableOptionMenuItemType.Header },
+                new BFUDropdownOption { Text = "Simple Sextant",Key = "apprentice-sextant",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Prime Sextant",Key = "journeyman-sextant",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Awakened Sextant",Key = "master-sextant",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Elevated Sextant",Key = "elevated-sextant",  ItemType = SelectableOptionMenuItemType.Normal },
+
+                new BFUDropdownOption { Text = "Blessings", Key = "Blessings", ItemType = SelectableOptionMenuItemType.Header },
+                new BFUDropdownOption { Text = "Blessing of Xoph",Key = "blessing-xoph",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Blessing of Tul",Key = "blessing-tul",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Blessing of Esh",Key = "blessing-esh",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Blessing of Uul-Netol",Key = "blessing-uul-netol",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Blessing of Chayula ",Key = "blessing-chayula",  ItemType = SelectableOptionMenuItemType.Normal },
+
+                new BFUDropdownOption { Text = "Misc", Key = "Misc", ItemType = SelectableOptionMenuItemType.Header },
+                new BFUDropdownOption { Text = "Stacked Deck",Key = "stacked-deck",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Ritual Vessel",Key = "ritual-vessel",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Orb of Unmaking",Key = "orb-of-unmaking",  ItemType = SelectableOptionMenuItemType.Normal },
+            };
+        }
+
         private static void OilsCatalystsBuilder()
         {
             OilsCatalysts = new List<IBFUDropdownOption>
@@ -162,6 +245,43 @@ namespace Faustus.Data
                 new BFUDropdownOption { Text = "Fertile Catalyst",Key = "fertile-catalyst",  ItemType = SelectableOptionMenuItemType.Normal },
                 new BFUDropdownOption { Text = "Prismatic Catalyst",Key = "prismatic-catalyst",  ItemType = SelectableOptionMenuItemType.Normal },
                 new BFUDropdownOption { Text = "Intrinsic Catalyst ",Key = "intrinsic-catalyst",  ItemType = SelectableOptionMenuItemType.Normal },
+            };
+        }
+
+        private static void ShardsBuilder()
+        {
+            Shards = new List<IBFUDropdownOption>
+            {
+                new BFUDropdownOption { Text = "Shards", Key = "Shards", ItemType = SelectableOptionMenuItemType.Header },
+                new BFUDropdownOption { Text = "Annulment Shard",Key = "annulment-shard",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Mirror Shard",Key = "mirror-shard",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Exalted Shard",Key = "exalted-shard",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Binding Shard",Key = "binding-shard",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Horizon Shard",Key = "horizon-shard",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Harbinger's Shard",Key = "harbingers-shard",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Engineer's Shard",Key = "engineers-shard",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Ancient Shard",Key = "ancient-shard",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Chaos Shard",Key = "chaos-shard",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Regal Shard",Key = "regal-shard",  ItemType = SelectableOptionMenuItemType.Normal },
+
+                new BFUDropdownOption { Text = "Splinter", Key = "Splinter", ItemType = SelectableOptionMenuItemType.Header },
+                new BFUDropdownOption { Text = "Simulacrum Splinter",Key = "simulacrum-splinter",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Crescent Splinter",Key = "crescent-splinter",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Ritual Splinter",Key = "ritual-splinter",  ItemType = SelectableOptionMenuItemType.Normal },
+
+                new BFUDropdownOption { Text = "Breach", Key = "Breach", ItemType = SelectableOptionMenuItemType.Header },
+                new BFUDropdownOption { Text = "Splinter of Xoph",Key = "splinter-xoph",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Splinter of Tul",Key = "splinter-tul",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Splinter of Esh",Key = "splinter-esh",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Splinter of Uul-Netol",Key = "splinter-uul",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Splinter of Chayula",Key = "splinter-chayula",  ItemType = SelectableOptionMenuItemType.Normal },
+
+                new BFUDropdownOption { Text = "Legion", Key = "Legion", ItemType = SelectableOptionMenuItemType.Header },
+                new BFUDropdownOption { Text = "Timeless Karui Splinter",Key = "timeless-karui-splinter",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Timeless Maraketh Splinter",Key = "timeless-maraketh-splinter",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Timeless Eternal Empire Splinter",Key = "timeless-eternal-empire-splinter",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Timeless Templar Splinter",Key = "timeless-templar-splinter",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Timeless Vaal Splinter",Key = "timeless-vaal-splinter",  ItemType = SelectableOptionMenuItemType.Normal },
             };
         }
 
