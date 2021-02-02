@@ -17,6 +17,7 @@ namespace Faustus.Pages
         private List<IBFUDropdownOption> _delveItems { get; set; }
         private List<IBFUDropdownOption> _scarabs { get; set; }
         private List<IBFUDropdownOption> _oils { get; set; }
+        private List<IBFUDropdownOption> _delerium { get; set; }
 
         [Inject]
         private IJSRuntime JSRuntime { get; set; }
@@ -27,6 +28,8 @@ namespace Faustus.Pages
             _delveItems = CurrencyDropdowns.DelveItems;
             _scarabs = CurrencyDropdowns.Scarabs;
             _oils = CurrencyDropdowns.OilsCatalysts;
+            _delerium = CurrencyDropdowns.Delerium;
+
         }
 
         public void UpdatePriceNote()

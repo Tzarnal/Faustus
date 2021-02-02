@@ -11,12 +11,14 @@ namespace Faustus.Data
         public static List<IBFUDropdownOption> DelveItems;
         public static List<IBFUDropdownOption> Scarabs;
         public static List<IBFUDropdownOption> OilsCatalysts;
+        public static List<IBFUDropdownOption> Delerium;
 
         static CurrencyDropdowns()
         {
             DelveItemsBuilder();
             ScarabItemsBuilder();
             OilsCatalystsBuilder();
+            DeleriumBuilder();
         }
 
         private static void DelveItemsBuilder()
@@ -160,6 +162,36 @@ namespace Faustus.Data
                 new BFUDropdownOption { Text = "Fertile Catalyst",Key = "fertile-catalyst",  ItemType = SelectableOptionMenuItemType.Normal },
                 new BFUDropdownOption { Text = "Prismatic Catalyst",Key = "prismatic-catalyst",  ItemType = SelectableOptionMenuItemType.Normal },
                 new BFUDropdownOption { Text = "Intrinsic Catalyst ",Key = "intrinsic-catalyst",  ItemType = SelectableOptionMenuItemType.Normal },
+            };
+        }
+
+        private static void DeleriumBuilder()
+        {
+            Delerium = new List<IBFUDropdownOption>
+            {
+                new BFUDropdownOption { Text = "Fine Delirium Orb", Key = "fine-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Singular Delirium Orb", Key = "singular-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Thaumaturge's Delirium Orb", Key = "thaumaturge's-delirium-orb, thaumaturges-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Blacksmith's Delirium Orb", Key = "blacksmith's-delirium-orb, blacksmiths-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Armoursmith's Delirium Orb", Key = "armoursmith's-delirium-orb, armoursmiths-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Cartographer's Delirium Orb", Key = "cartographer's-delirium-orb, cartographers-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Jeweller's Delirium Orb", Key = "jeweller's-delirium-orb, jewellers-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Abyssal Delirium Orb", Key = "abyssal-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Decadent Delirium Orb", Key = "decadent-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Foreboding Delirium Orb", Key = "foreboding-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Obscured Delirium Orb", Key = "obscured-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Whispering Delirium Orb", Key = "whispering-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Fragmented Delirium Orb", Key = "fragmented-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Skittering Delirium Orb", Key = "skittering-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Fossilised Delirium Orb", Key = "fossilised-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Portentous Delirium Orb", Key = "portentous-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Diviner's Delirium Orb", Key = "diviner's-delirium-orb, diviners-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Delirium Orb", Key = "delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Primal Delirium Orb", Key = "primal-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Imperial Delirium Orb", Key = "imperial-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Timeless Delirium Orb", Key = "timeless-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Blighted Delirium Orb", Key = "blighted-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
+                new BFUDropdownOption { Text = "Amorphous Delirium Orb", Key = "amorphous-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
             };
         }
     }
