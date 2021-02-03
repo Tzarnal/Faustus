@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BlazorFluentUI.AllComponents" Version="4.0.2" />
+    <PackageReference Include="BlazorFluentUI.BFUButton" Version="4.0.2" />
+    <PackageReference Include="BlazorFluentUI.BFUDropdown" Version="4.0.2" />
+    <PackageReference Include="BlazorFluentUI.BFUTextField" Version="4.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.2" PrivateAssets="all" />
     <PackageReference Include="PublishSPAforGitHubPages.Build" Version="1.2.0" />
