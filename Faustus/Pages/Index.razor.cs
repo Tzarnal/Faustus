@@ -1,4 +1,4 @@
-﻿using BlazorFluentUI;
+using BlazorFluentUI;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 using System.Collections.Generic;
@@ -37,7 +37,7 @@ namespace Faustus.Pages
 
         public void UpdatePriceNote()
         {
-            _priceNote = $"~b/o {_cost}/{_stackSize} {_currency}";
+            _priceNote = $"~price {_cost}/{_stackSize} {_currency}";
         }
 
         public async Task CopyPriceNote()
