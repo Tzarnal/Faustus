@@ -1,4 +1,4 @@
-using BlazorFluentUI;
+﻿using BlazorFluentUI;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 using System.Collections.Generic;
@@ -9,12 +9,21 @@ namespace Faustus.Pages
 {
     public partial class Index : ComponentBase
     {
-        public string _stackSize { get; set; } = "1";
-        public string _cost { get; set; } = "1";
-        public string _currency { get; set; } = "chaos";
-        public string _priceNote { get; set; }
+        private string _stackSize { get; set; } = "1";
+        private string _cost { get; set; } = "1";
+        private string _currency { get; set; } = "chaos";
+        private string _priceNote { get; set; }
 
-        private List<IBFUDropdownOption> _currencies { get; set; }
+        private BFUDropdown _currenciesDropdown { get; set; }
+        private BFUDropdown _shardsDropdown { get; set; }
+        private BFUDropdown _delveDropdown { get; set; }
+        private BFUDropdown _scarabsDropdown { get; set; }
+        private BFUDropdown _oilsDropdown { get; set; }
+        private BFUDropdown _deleriumDropdown { get; set; }
+
+        private List<IBFUDropdownOption> _currencies
+        { get; set; }
+
         private List<IBFUDropdownOption> _shards { get; set; }
         private List<IBFUDropdownOption> _delveItems { get; set; }
         private List<IBFUDropdownOption> _scarabs { get; set; }
@@ -56,6 +65,13 @@ namespace Faustus.Pages
         {
             _currency = args.Option.Key;
             UpdatePriceNote();
+
+            _currenciesDropdown.SelectedOption = null;
+            _shardsDropdown.SelectedOption = null;
+            _delveDropdown.SelectedOption = null;
+            _scarabsDropdown.SelectedOption = null;
+            _oilsDropdown.SelectedOption = null;
+            _deleriumDropdown.SelectedOption = null;            
         }
 
         private async Task CopyTextToClipboard()
