@@ -19,7 +19,7 @@ namespace Faustus.Pages
         private BFUDropdown _delveDropdown { get; set; }
         private BFUDropdown _scarabsDropdown { get; set; }
         private BFUDropdown _oilsDropdown { get; set; }
-        private BFUDropdown _deleriumDropdown { get; set; }
+        private BFUDropdown _deliriumDropdown { get; set; }
 
         private List<IBFUDropdownOption> _currencies
         { get; set; }
@@ -28,7 +28,7 @@ namespace Faustus.Pages
         private List<IBFUDropdownOption> _delveItems { get; set; }
         private List<IBFUDropdownOption> _scarabs { get; set; }
         private List<IBFUDropdownOption> _oils { get; set; }
-        private List<IBFUDropdownOption> _delerium { get; set; }
+        private List<IBFUDropdownOption> _delirium { get; set; }
 
         [Inject]
         private IJSRuntime JSRuntime { get; set; }
@@ -41,7 +41,7 @@ namespace Faustus.Pages
             _delveItems = CurrencyDropdowns.DelveItems;
             _scarabs = CurrencyDropdowns.Scarabs;
             _oils = CurrencyDropdowns.OilsCatalysts;
-            _delerium = CurrencyDropdowns.Delerium;
+            _delirium = CurrencyDropdowns.Delirium;
         }
 
         public void UpdatePriceNote()
@@ -71,7 +71,7 @@ namespace Faustus.Pages
             _delveDropdown.SelectedOption = null;
             _scarabsDropdown.SelectedOption = null;
             _oilsDropdown.SelectedOption = null;
-            _deleriumDropdown.SelectedOption = null;            
+            _deliriumDropdown.SelectedOption = null;
         }
 
         private async Task CopyTextToClipboard()

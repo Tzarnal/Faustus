@@ -13,14 +13,14 @@ namespace Faustus.Data
         public static List<IBFUDropdownOption> DelveItems;
         public static List<IBFUDropdownOption> Scarabs;
         public static List<IBFUDropdownOption> OilsCatalysts;
-        public static List<IBFUDropdownOption> Delerium;
+        public static List<IBFUDropdownOption> Delirium;
 
         static CurrencyDropdowns()
         {
             DelveItemsBuilder();
             ScarabItemsBuilder();
             OilsCatalystsBuilder();
-            DeleriumBuilder();
+            DeliriumBuilder();
             CurrenciesBuilder();
             ShardsBuilder();
         }
@@ -285,9 +285,9 @@ namespace Faustus.Data
             };
         }
 
-        private static void DeleriumBuilder()
+        private static void DeliriumBuilder()
         {
-            Delerium = new List<IBFUDropdownOption>
+            Delirium = new List<IBFUDropdownOption>
             {
                 new BFUDropdownOption { Text = "Fine Delirium Orb", Key = "fine-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
                 new BFUDropdownOption { Text = "Singular Delirium Orb", Key = "singular-delirium-orb",  ItemType = SelectableOptionMenuItemType.Normal },
